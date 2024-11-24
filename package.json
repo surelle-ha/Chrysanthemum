@@ -16,7 +16,9 @@
         "url": "https://github.com/surelle-ha/Chrysanthemum.git"
     },
     "scripts": {
-        "build": "tsc --build"
+        "build": "rimraf dist && tsc --build",
+        "prepublish": "npm run build",
+        "devmode": "tsc --build --watch"
     },
     "dependencies": {
         "@surelle-ha/chrysanthemum": "file:",

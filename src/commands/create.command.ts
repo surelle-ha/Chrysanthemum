@@ -1,19 +1,13 @@
 import { Command } from "commander";
-import ora, { Color } from "ora";
+import ora from "ora";
 import chalk from "chalk";
 import fs from "fs";
 import path from "path";
 import yaml from "js-yaml";
-
-interface startSpinnerInterface {
-    title: string;
-    color: Color;
-}
-
-interface mockSpinnerInterface extends startSpinnerInterface {
-    ttl: number;
-    successMessage: string;
-}
+import {
+    mockSpinnerInterface,
+    startSpinnerInterface,
+} from "interfaces/spinner.interface";
 
 const startSpinner = (attribute: startSpinnerInterface) => {
     const spinner = ora(attribute.title).start();
