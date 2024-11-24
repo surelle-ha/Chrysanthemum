@@ -1,7 +1,7 @@
 {
     "name": "@surelle-ha/chrysanthemum",
     "command": "mum",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": "surelle-ha",
     "description": "❀ Chrysanthemum is a NestJS open-sourced project manager.",
     "license": "ISC",
