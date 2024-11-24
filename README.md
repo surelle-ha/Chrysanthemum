@@ -120,8 +120,8 @@ Contributors who help improve the project make a significant impact. We apprecia
 
 Thank you for choosing to contribute to the project. We look forward to your contributions!
 
-<a href="https://github.com/surelle-ha/CLI-Tool-Boilerplate/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=surelle-ha/CLI-Tool-Boilerplate" />
+<a href="https://github.com/surelle-ha/Chrysanthemum/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=surelle-ha/Chrysanthemum" />
 </a>
 
 #
