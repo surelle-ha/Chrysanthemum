@@ -1,0 +1,41 @@
+{
+    "name": "@surelle-ha/hero",
+    "version": "1.0.3",
+    "author": "surelle-ha",
+    "description": "Hero is a boilerplate for developing CLI tools.",
+    "repository": {
+        "url": "https://github.com/surelle-ha/Hero-Boilerplate.git"
+    },
+    "keywords": [
+        "cli"
+    ],
+    "license": "ISC",
+    "type": "module",
+    "bin": {
+        "hero": "./dist/bin/hero.js"
+    },
+    "scripts": {
+        "build": "tsc --build"
+    },
+    "dependencies": {
+        "chalk": "^5.3.0",
+        "commander": "^12.1.0",
+        "figlet": "^1.8.0",
+        "fs": "^0.0.1-security",
+        "inquirer": "^12.0.0",
+        "ora": "^8.1.0",
+        "uuid": "^10.0.0",
+        "wrap-ansi": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/axios": "^0.14.4",
+        "@types/chalk": "^2.2.4",
+        "@types/commander": "^2.12.5",
+        "@types/estree": "^1.0.6",
+        "@types/node": "^22.8.6",
+        "@types/uuid": "^10.0.0",
+        "eslint": "^9.12.0",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-typescript": "^0.14.0"
+    }
+}
