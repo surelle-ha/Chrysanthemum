@@ -3,17 +3,17 @@
     "command": "mum",
     "version": "1.0.0",
     "author": "surelle-ha",
-    "description": "Chrysanthemum is a NestJS open-sourced project manager.",
-    "repository": {
-        "url": "https://github.com/surelle-ha/Chrysanthemum.git"
-    },
+    "description": "❀ Chrysanthemum is a NestJS open-sourced project manager.",
+    "license": "ISC",
+    "type": "module",
     "keywords": [
         "cli"
     ],
-    "license": "ISC",
-    "type": "module",
     "bin": {
         "mum": "./dist/bin/mum.js"
+    },
+    "repository": {
+        "url": "https://github.com/surelle-ha/Chrysanthemum.git"
     },
     "scripts": {
         "build": "tsc --build"
@@ -26,7 +26,7 @@
         "figlet": "^1.8.0",
         "fs": "^0.0.1-security",
         "inquirer": "^12.0.0",
-        "ora": "^8.1.0",
+        "ora": "^8.1.1",
         "uuid": "^10.0.0",
         "wrap-ansi": "^9.0.0"
     },

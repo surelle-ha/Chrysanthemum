@@ -13,10 +13,8 @@ const config = new Config();
 import { Command } from "commander";
 const program = new Command();
 
-/**
- * Command Scripts
- */
-/* [INSPIRE] */ import inspire from "./commands/inspire.js";
+/* [INSPIRE] */ import inspire from "./commands/inspire.command.js";
+/* [CREATE] */ import create from "./commands/create.command.js";
 
 /** @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
  *
@@ -30,6 +28,7 @@ program
     .version(await config.getVersion());
 
 program.addCommand(inspire);
+program.addCommand(create);
 
 if (process.argv.length === 2) {
     config.getBanner(program);

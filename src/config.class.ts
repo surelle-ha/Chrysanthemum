@@ -34,6 +34,11 @@ export class Config {
         return json.version;
     };
 
+    public readonly getAuthor = async (): Promise<string> => {
+        const json = await this.loadJson();
+        return json.author;
+    };
+
     public readonly getBanner = async (program: Command) => {
         const name = await this.getName();
         const appName = name.split("/")[1] || name;

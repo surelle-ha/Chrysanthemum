@@ -1,0 +1,26 @@
+version: '1.0'
+description: Basic schema definition
+tables:
+  - name: users
+    columns:
+      - name: id
+        type: integer
+        primaryKey: true
+      - name: username
+        type: string
+        unique: true
+      - name: email
+        type: string
+        unique: true
+  - name: posts
+    columns:
+      - name: id
+        type: integer
+        primaryKey: true
+      - name: user_id
+        type: integer
+        foreignKey: users.id
+      - name: title
+        type: string
+      - name: content
+        type: text
