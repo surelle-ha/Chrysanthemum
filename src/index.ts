@@ -1,43 +1,38 @@
-import { Command } from "commander";
-import figlet from "figlet";
 import chalk from "chalk";
 import wrapAnsi from "wrap-ansi";
 
-import inspire from "./commands/inspire.js";
+/**
+ * Configuration Class
+ */
+import { Config } from "./config.class.js";
+const config = new Config();
 
+/**
+ * Command Class
+ */
+import { Command } from "commander";
 const program = new Command();
 
+/**
+ * Command Scripts
+ */
+/* [INSPIRE] */ import inspire from "./commands/inspire.js";
+
+/** @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ *
+ *   Chysanthemum Script Kickstarter
+ *
+ *  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ */
 program
-    .name("hero")
-    .description(
-        chalk.green(
-            wrapAnsi("Hero is a boilerplate for developing CLI tools.", 65)
-        )
-    )
-    .version("1.6.0");
+    .name(await config.getCommand())
+    .description(chalk.green(wrapAnsi(await config.getDescription(), 65)))
+    .version(await config.getVersion());
 
 program.addCommand(inspire);
 
-const isDefaultCommand = process.argv.length === 2;
-
-if (isDefaultCommand) {
-    figlet(
-        "Hero Boilerplate",
-        {
-            font: "cybermedium",
-            width: 80,
-        },
-        (err, data) => {
-            if (err) {
-                console.log(chalk.red("Something went wrong..."));
-                console.dir(err);
-                return;
-            }
-            console.log(chalk.green(data));
-            console.log(chalk.red(`\t  DEVELOPED BY SURELLE`));
-            program.parse(process.argv);
-        }
-    );
+if (process.argv.length === 2) {
+    config.getBanner(program);
 } else {
     program.parse(process.argv);
 }

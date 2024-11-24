@@ -1,10 +1,11 @@
 {
-    "name": "@surelle-ha/hero",
-    "version": "1.0.3",
+    "name": "@surelle-ha/chrysanthemum",
+    "command": "mum",
+    "version": "1.0.0",
     "author": "surelle-ha",
-    "description": "Hero is a boilerplate for developing CLI tools.",
+    "description": "Chrysanthemum is a NestJS open-sourced project manager.",
     "repository": {
-        "url": "https://github.com/surelle-ha/Hero-Boilerplate.git"
+        "url": "https://github.com/surelle-ha/Chrysanthemum.git"
     },
     "keywords": [
         "cli"
@@ -12,12 +13,14 @@
     "license": "ISC",
     "type": "module",
     "bin": {
-        "hero": "./dist/bin/hero.js"
+        "mum": "./dist/bin/mum.js"
     },
     "scripts": {
         "build": "tsc --build"
     },
     "dependencies": {
+        "@surelle-ha/chrysanthemum": "file:",
+        "@surelle-ha/hero": "file:",
         "chalk": "^5.3.0",
         "commander": "^12.1.0",
         "figlet": "^1.8.0",
@@ -35,7 +38,6 @@
         "@types/node": "^22.8.6",
         "@types/uuid": "^10.0.0",
         "eslint": "^9.12.0",
-        "eslint-config-standard": "^17.1.0",
         "eslint-plugin-typescript": "^0.14.0"
     }
 }

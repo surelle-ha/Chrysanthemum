@@ -1,10 +1,66 @@
-<div id="badges" align="center">
-	<div align="center">
-		<img src="https://raw.githubusercontent.com/gist/vininjr/d29bb07bdadb41e4b0923bc8fa748b1a/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif" width="200"/><br><br>
-	</div>
-</div>
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
-This is a personal boilerplate for developing a CLI tools.
+<h2>CHRYSANTHEMUM</h2>
+
+<a href="https://github.com/surelle-ha/Chrysanthemum/actions/workflows/gh-registry.yml">
+  <img src="https://github.com/surelle-ha/Chrysanthemum/actions/workflows/gh-registry.yml/badge.svg" alt="⚡ Github Registry">
+</a>
+
+<a href="https://github.com/surelle-ha/Chrysanthemum/actions/workflows/npm-registry.yml">
+  <img src="https://github.com/surelle-ha/Chrysanthemum/actions/workflows/npm-registry.yml/badge.svg" alt="⚡ NPM Registry">
+</a>
+
+
+<img align="left" width=200px alt="Unicorn" src="https://static.vecteezy.com/system/resources/thumbnails/047/464/608/small/chrysanthemum-flower-illustration-chrysanthemum-japonense-isolated-on-a-transparent-background-png.png"/>
+
+Projects always begin with an idea. Chrysanthemum is a powerful command-line tool designed to help users turn their ideas into fully functional projects. Using its intuitive command, mum, you can effortlessly generate an entire NestJS backend tailored to your schema. It simplifies the complexities of backend development by automating tasks like setting up controllers, services, modules, and database integration. 
+
+Chrysanthemum ensures consistency and scalability in your project while saving countless hours of manual coding. Whether you're prototyping a startup or building a full-scale application, this tool empowers developers to focus on creativity and innovation instead of boilerplate setup. With Chrysanthemum, your ideas can seamlessly transition from concept to reality.
+
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
+## Installation Instructions
+
+To begin developing with Blitz, fork or clone this repository using the command below:
+``` bash
+git clone https://github.com/surelle-ha/Blitz-Boilerplate
+```
+After cloning, update the details in package.json as needed. Next, install the required dependencies for the boilerplate:
+```
+npm install
+```
+
+## Development Instructions
+
+After a fresh installation, your `src` directory should look like the following structure. You may modify it based on your needs, but ensure that the `index.ts` file is not removed:
+```
+📦src
+ ┣ 📜blitz.controller.ts
+ ┣ 📜blitz.module.ts
+ ┣ 📜blitz.service.ts
+ ┗ 📜index.ts
+```
+When you finish developing your package, make sure to update the `index.ts` file accordingly:
+``` typescript
+export * from "./blitz.module";
+export * from "./blitz.service";
+export * from "./blitz.controller";
+```
+To build and test your package locally, run the following command:
+``` bash
+npm run build && npm link
+```
+This will make your package available for local use. To test your package, navigate to another NestJS project and install your package:
+```
+npm install @username/blitz-boilerplate
+```
+> Note: Replace @username/blitz-boilerplate with your updated package name if it has been changed.
+
+## Deployment Instructions
+
+This boilerplate comes with two pre-configured GitHub workflows: one for pushing the package to GitHub Registry, and another for pushing it to the NPM Registry.
+
+No configuration is needed for the GitHub Registry action. However, for the NPM Registry action, you'll need to generate an Access Token from the NPM website. After that, create a repository secret on your GitHub account named NPM_TOKEN. Once this is done, both workflows will succeed.
 
 <div align="center">
 
